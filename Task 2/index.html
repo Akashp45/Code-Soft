@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="programming.png" class="logo" alt="logo">
+        <ul id="slidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+        
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu('slidemenu')"></i> 
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu('slidemenu')"></i>
+      </nav>
+      <div class="header-text">
+        <p>Frontend Web Devloper</p>
+        <h1>Hi, I'm <span>Akash</span> <br>Panse</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+
+  <div id="about">
+<div class="container">
+  <div class="row">
+    <div class="about-col-1">
+     <img src="akash.jpg">
+    </div>
+    <div class="about-col-2"> 
+       <h1 class="sub-title">About Me</h1>
+       <p>I am Akash Panse, a third year studnt pursuing computer engineering from MIT Academy of Engineering,pune.
+        I hail from Lucknow, Uttar Pradesh. I am skilled Frontend web development. Currently I am learning DSA with cpp.</p>
+
+       <div class="tab-titles">
+        <p>
+            <b>Skills:</b>
+            <br>
+            <ul>
+                <li>Frontend web Devlopment</li>
+                <br>
+                <li>HTML,CSS,Javascript</li>
+                <br>
+                <li>C,CPP,DSA(with cpp)</li>
+                <br>
+            </ul>
+        </p>
+
+        <div class="tab-titles">
+            <p>
+                <b>Education:</b>
+                <ul>
+                    <li><span>8.31CGPA</span><br>MIT Academy of Engineering,pune</li>
+                    <br>
+                    <li><span>CLASS 10 : 92.4%</span><br>Dravid High-School,Wai</li>
+                    <br>
+                    <li><span>CLASS 12 : 90.4%</span><br>Disha Junior College,Wai</li>
+                    <br>
+                    <li><span>CET: 95% <br>Disha Academy,Wai</span></li>
+                    <br>
+                  </ul>
+            </p>
+       </div>
+       
+    </div>
+  </div>
+</div>
+  </div>
+  
+      
+
+   <!-- portfolio -->
+
+   <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="automated vertical farming.jpg">
+          <div class="layer">
+            <h3>Automated Vertical Farming</h3>
+            <p>I have created a automated vertical farming using aurdino cloude. It is our Minor Project in 2nd year.</p>
+          </div>
+        </div>
+     
+
+      
+        <div class="work">
+          <img src="world heritage.jpeg">
+          <div class="layer">
+            <h3>World Heriage</h3>
+            <p>I have created a Landing Pange with HTML,CSS. In the Landing page I have gave info of world heritage sites in India </p>
+          </div>
+        </div>
+      
+
+     
+        <div class="work">
+          <img src="contactless switch.avif">
+          <div class="layer">
+            <h3>Contactless Switch</h3>
+            <p>
+              We have created Contact Less Switch where we use ultrasonic sensor and Bluetooth moduel.
+            </p>
+          </div>
+        </div>
+
+        <div class="work">
+            <img src="hand gesture.jpeg">
+            <div class="layer">
+              <h3>Hand Gesture</h3>
+              <p>We have created Motion Sensor where we use ultrasonic sensor. Using this we control laptop with the help of hand gesture</p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="game management system.jpg">
+            <div class="layer">
+              <h3>Game Management System</h3>
+              <p>I have created a game management system using SQL.</p>
+            </div>
+          </div>
+      </div>
+
+      <!-- contact -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>akash.panse@mitaoe.ac.in</p>
+              <p><i class="fa-solid fa-phone"></i>876794****</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/argh.urgh/"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/prateeksha-pandey-75898223a/"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/prateeksha17"> <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.freelancer.com/hireme/prateekshapande5"> <i class="fa-solid fa-dove"></i></a>
+
+              </div>
+              <a href="Resume.pdf" download class="btn " >Download CV</a>
+            </div>
+
+            <div class="contact-right">
+              <form action="https://formspree.io/f/xdovrwqe" method="post">
+                <input id="text" type="text" name="Name" placeholder="Your Name" required>
+                <input id="email" type="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+<!-- --------------footer------------------- -->
+
+<div id="footer">
+  <div class="cointainer">
+    <div class="footer">
+      <p>Copyright © 2023 Akash Panse. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
